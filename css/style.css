@@ -1,0 +1,88 @@
+body {
+  font: normal small-caps normal 14px cursive;
+  margin: 3px;
+  padding: 1px;
+  border-style: inset;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(19, 252, 240, 0.904),
+      rgba(176, 176, 236, 0.5)
+    ),
+    url(../img/devset2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 730px;
+}
+
+main {
+  padding: 5px;
+  margin: 5px;
+}
+
+header {
+  padding: 10px;
+}
+
+strong {
+  font-size: large;
+  font-weight: bolder;
+  color: green;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(44, 39, 39);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(110, 113, 238);
+}
+
+h3 {
+  margin-left: 3px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 33%;
+  margin-top: 10px;
+}
+
+
+
+.center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  position: relative;
+  overflow: hidden;
+}
+
+.right {
+  float: right;
+}
