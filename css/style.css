@@ -5,8 +5,8 @@ body {
   border-style: inset;
   background-image: linear-gradient(
       to bottom,
-      rgba(19, 252, 240, 0.904),
-      rgba(176, 176, 236, 0.5)
+      rgba(14, 253, 241, 0.945),
+      rgba(70, 70, 240, 0.5)
     ),
     url(../img/devset2.jpg);
   background-repeat: no-repeat;
@@ -27,15 +27,17 @@ strong {
   font-weight: bolder;
   color: green;
 }
+
 ul {
-  list-style-type: none;
+  list-style-type:circle;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-li {
+nav li {
   float: left;
+  list-style-type: none;
 }
 
 li a {
@@ -53,6 +55,9 @@ li a:hover {
 h3 {
   margin-left: 3px;
 }
+h4 {
+  color: green;
+}
 
 button {
   background-color: transparent;
@@ -67,8 +72,6 @@ button {
   margin-left: 33%;
   margin-top: 10px;
 }
-
-
 
 .center {
   float: none;
@@ -85,4 +88,11 @@ button {
 
 .right {
   float: right;
+}
+
+ol {
+  list-style-type: style;
+  margin: 5px;
+  padding: 5px;
+  
 }

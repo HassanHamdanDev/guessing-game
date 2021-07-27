@@ -1,5 +1,7 @@
 "use strict";
 
+let yourScore = 0;
+
 function myFunction() {
   let userName = prompt("Hello , What is Your Name ?");
   alert("Welcome to My Website " + userName + " ^.^");
@@ -11,6 +13,7 @@ function myFunction() {
     case "y":
       // console.log('yes');
       alert("Thats Correct :)");
+      yourScore++;
       break;
     case "no":
     case "n":
@@ -27,6 +30,7 @@ function myFunction() {
     case "y":
       // console.log('yes');
       alert("Thats Correct :)");
+      yourScore++;
       break;
     case "no":
     case "n":
@@ -37,13 +41,14 @@ function myFunction() {
       alert("You Have a Problem");
   }
 
-  let myFav = prompt( "Am I Like The Back-End Development More ?\n (yes/no , y/n )"
+  let myFav = prompt("Am I Like The Back-End Development More ?\n (yes/no , y/n )"
   ).toLocaleLowerCase();
   switch (myFav) {
     case "yes":
     case "y":
       // console.log('yes');
       alert("Thats Correct :)");
+      yourScore++;
       break;
     case "no":
     case "n":
@@ -60,6 +65,7 @@ function myFunction() {
     case "y":
       // console.log('yes');
       alert("Thats Correct :)");
+      yourScore++;
       break;
     case "no":
     case "n":
@@ -76,6 +82,7 @@ function myFunction() {
     case "y":
       // console.log('yes');
       alert("Thats Correct :)");
+      yourScore++;
       break;
     case "no":
     case "n":
@@ -88,3 +95,49 @@ function myFunction() {
 
   alert("Thank You " + userName + " For Visiting My Website ^.^");
 }
+
+function myNumber() {
+  let myNumber = 8;
+  let userNumber = parseInt(prompt("Guess My Number you have 4 attempt "));
+  let i = 4;
+  let j = 1;
+  while (isNaN(userNumber)) {
+    userNumber = parseInt(prompt(" You Need To Put a Number to Guess My Number you have 4 attempt "));
+  }
+  while (userNumber !== myNumber && j < i) {
+    if (userNumber > myNumber) {
+      userNumber = parseInt(prompt(`Not Correct and " too high " try again to Guess My Number you have ${i - j} attempt\n (it is 8) `));
+    } else {
+      userNumber = parseInt(prompt(`Not Correct and " too low " try again to Guess My Number you have ${i - j} attempt\n (it is 8) `));
+    }
+    j++;
+  }
+  if (userNumber === myNumber) {
+    alert("Thats Correct it is 8 :) ");
+    yourScore++;
+  } else {
+    alert("you out of attempt it was 8 :) ");
+  }
+}
+
+function mySeries() {
+  let myFavSeries = ["GOT", "100", "Suits"];
+  let userGuess = prompt("What is my Fav Sreies ? You Have 6 attempt \n (GOT,100,Sutis)");
+  for (let K = 0; K < 5; K++) {
+    if (userGuess === "GOT" || userGuess === "100" || userGuess === "Suits") {
+      alert(`Thats Correct and this my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
+      yourScore++;
+      break;
+    } else {
+      userGuess = prompt(`not correct ,try again What is my Fav Sreies ? You Have ${5 - K} attempt \n (GOT,100,Sutis)`);
+      if (K === 4) {
+        alert(`Thats not Correct and this was my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
+      }
+    }
+  }
+}
+
+function myScore() {
+  alert(`Youe Score is ${yourScore} out of 7`);
+}
+
