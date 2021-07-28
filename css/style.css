@@ -5,8 +5,8 @@ body {
   border-style: inset;
   background-image: linear-gradient(
       to bottom,
-      rgba(14, 253, 241, 0.945),
-      rgba(70, 70, 240, 0.5)
+      rgba(42, 248, 238, 0.795),
+      rgba(255, 255, 255, 0.664)
     ),
     url(../img/devset2.jpg);
   background-repeat: no-repeat;

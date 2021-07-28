@@ -2,7 +2,7 @@
 
 let yourScore = 0;
 
-function myFunction() {
+function getMyInfo() {
   let userName = prompt("Hello , What is Your Name ?");
   alert("Welcome to My Website " + userName + " ^.^");
 
@@ -96,7 +96,7 @@ function myFunction() {
   alert("Thank You " + userName + " For Visiting My Website ^.^");
 }
 
-function myNumber() {
+function getGuessMyNumber() {
   let myNumber = 8;
   let userNumber = parseInt(prompt("Guess My Number you have 4 attempt "));
   let i = 4;
@@ -120,24 +120,26 @@ function myNumber() {
   }
 }
 
-function mySeries() {
+function getGuessMySeries() {
   let myFavSeries = ["GOT", "100", "Suits"];
   let userGuess = prompt("What is my Fav Sreies ? You Have 6 attempt \n (GOT,100,Sutis)");
-  for (let K = 0; K < 5; K++) {
-    if (userGuess === "GOT" || userGuess === "100" || userGuess === "Suits") {
-      alert(`Thats Correct and this my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
-      yourScore++;
-      break;
-    } else {
-      userGuess = prompt(`not correct ,try again What is my Fav Sreies ? You Have ${5 - K} attempt \n (GOT,100,Sutis)`);
-      if (K === 4) {
-        alert(`Thats not Correct and this was my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
+  outlooper: for (let K = 0; K < 5; K++) {
+    for (let i = 0; i < myFavSeries.length; i++) {
+      if (userGuess === myFavSeries[i]) {
+        alert(`Thats Correct and this my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
+        yourScore++;
+        break outlooper;
       }
+    }
+    userGuess = prompt(`not correct ,try again What is my Fav Sreies ? You Have ${5 - K} attempt \n (GOT,100,Sutis)`);
+    if (K === 4) {
+      alert(`Thats not Correct and this was my all fav Series ${myFavSeries[0]},${myFavSeries[1]},${myFavSeries[2]}`);
     }
   }
 }
 
-function myScore() {
+function getUserScore() {
   alert(`Youe Score is ${yourScore} out of 7`);
 }
+
 
