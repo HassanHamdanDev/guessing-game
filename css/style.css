@@ -2,7 +2,6 @@ body {
   font: normal small-caps normal 14px cursive;
   margin: 3px;
   padding: 1px;
-  border-style: inset;
   background-image: linear-gradient(
       to bottom,
       rgba(42, 248, 238, 0.795),
@@ -30,9 +29,8 @@ strong {
 
 ul {
   list-style-type:circle;
-  margin: 0;
+  margin: 5px;
   padding: 0;
-  /* overflow: hidden; */
 }
 
 nav li {
@@ -54,9 +52,11 @@ li a:hover {
 
 h3 {
   margin-left: 3px;
+  margin: 5px;
 }
 h4 {
   color: green;
+  margin: 5px;
 }
 
 button {
@@ -79,20 +79,28 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 5px;
 }
 
 .top {
   position: relative;
   overflow: hidden;
+  margin: 5px;
+
 }
 
 .right {
   float: right;
+  margin: 5px;
+
 }
 
 ol {
   list-style-type: style;
   margin: 5px;
   padding: 5px;
+  margin: 5px;
   
 }
+
+
