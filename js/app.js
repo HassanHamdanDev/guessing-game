@@ -5,19 +5,15 @@ let yourScore = 0;
 function getMyInfo() {
   let userName = prompt("Hello , What is Your Name ?");
   alert("Welcome to My Website " + userName + " ^.^");
-
   let myAge = prompt("Am I 29 years old ?\n (yes/no , y/n )").toLocaleLowerCase();
-  console.log(myAge);
   switch (myAge) {
     case "yes":
     case "y":
-      // console.log('yes');
       alert("Thats Correct :)");
       yourScore++;
       break;
     case "no":
     case "n":
-      // console.log('no');
       alert("Thats Not Correct");
       break;
     default:
@@ -28,13 +24,11 @@ function getMyInfo() {
   switch (myMajor) {
     case "yes":
     case "y":
-      // console.log('yes');
       alert("Thats Correct :)");
       yourScore++;
       break;
     case "no":
     case "n":
-      // console.log('no');
       alert("Thats Not Correct");
       break;
     default:
@@ -46,13 +40,11 @@ function getMyInfo() {
   switch (myFav) {
     case "yes":
     case "y":
-      // console.log('yes');
       alert("Thats Correct :)");
       yourScore++;
       break;
     case "no":
     case "n":
-      // console.log('no');
       alert("Thats Not Correct");
       break;
     default:
@@ -63,13 +55,11 @@ function getMyInfo() {
   switch (myFunny) {
     case "yes":
     case "y":
-      // console.log('yes');
       alert("Thats Correct :)");
       yourScore++;
       break;
     case "no":
     case "n":
-      // console.log('no');
       alert("Thats Not Correct");
       break;
     default:
@@ -80,13 +70,11 @@ function getMyInfo() {
   switch (myMovies) {
     case "yes":
     case "y":
-      // console.log('yes');
       alert("Thats Correct :)");
       yourScore++;
       break;
     case "no":
     case "n":
-      // console.log('no');
       alert("Thats Not Correct");
       break;
     default:
